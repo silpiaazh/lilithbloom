@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilith Bloom</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!--Header section starts-->
+    <header>
+        <a href="#" class="logo">Lilith Bloom</a>
+
+        <nav class="navbar">
+            <a href="lilith bloom.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="location.html">Location</a>
+            <a href="reserved.html">Reserved</a>
+        </nav>
+    </header>
+    <!--Header section ends-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!-- Slideshow container starts -->
+<div class="Slideshow">
+    <div class="slide">
+      <img src="pic1.png" alt="" height="500">
+    </div>
+    <div class="slide">
+      <img src="pic2.png" alt="" height="500">
+    </div>
+    <div class="slide">
+      <img src="pic3.png" alt="" height="500">
+    </div>
+    <div class="slide">
+        <img src="pic4.png" alt="" height="500">
+    </div>
+    <div class="navigation">
+      <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+      <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      if (n > slides.length)
+      {
+        slideIndex = 1;
+      }
+      if (n < 1)
+      {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++)
+      {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+<!-- Slideshow container ends -->
+
+<br>
+
+<!-- about us section starts  -->
+<div class="about" id="about">
+
+    <div class="pic-content">
+      <img src="about.jpg" alt="">
+    </div>
+  
+    <div class="content">
+      <span>About Us</span>
+      <!-- <h3>makeup makes difference</h3> -->
+      <p>Lilith Bloom is a training program or workshop designed to teach people how to create and arrange various types of flowers into beautiful bouquets, arrangements, or flower decorations. In this class, participants typically learn about various types of flowers, different arranging techniques, color selection, and the aesthetics of flower design. The goal is to develop floral arranging skills so that participants can create captivating and artistic flower creations for various events or as a personal hobby. Flower arranging classes are often guided by experienced instructors in the art of floristry. </p>
+  </div>
+    
+</div>
+
+
+<!-- about us section ends -->
+
+<!--Our Program section starts-->
+    <section class="OurProgram" id="OurProgram">
+      <div class="heading">
+        <h1>Our Program</h1>
+    </div>
+
+    <div class="lightbox">
+        <a href="pic5.jpg"><img src="pic5.jpg" alt=""></a>
+        <a href="pic6.jpg"><img src="pic6.jpg" alt=""></a>
+        <a href="pic7.jpg"><img src="pic7.jpg" alt=""></a>
+    </div>
+    </section>
+<!--Our Program section ends-->
+
+<br>
+
+<!-- Testimonials section starts -->
+<section>
+  <img src="pic9.png" width="1276px" height="602px">
+</section>
+<!-- Testimonials section ends -->
+
+
+<!-- Footer section starts  -->
+<footer>
+  <div class="footer-atas">
+      <div class="footer-1">
+         <img src="logo.png" alt="">
+
+          <p>Office 88 Kota Kasablanka 9th <br>
+              Floor Unit L Jl. Casablanca Raya <br>
+              Kav. 28, Jakarta</p>
+
+          <p>Phone: (021) 29475573</p>
+      </div>
+
+
+      <div class="footer-2">
+          <h3>Get Connected</h3>
+          <input type="text" name="email" id="email" placeholder="Email Adddress">
+
+          <div class="footer-2-TnC">
+              <input type="checkbox" name="TnC" id="TnC">
+              <label for="TnC" class="TnC">
+                  I would like Lilith Bloom to send me information <br>
+                  about the latest events, information and offers.</label>
+          </div>
+
+          <input type="button" value="Subscribe">
+      </div>
+
+
+      <div class="footer-3">
+          <h3>Follow Us</h3>
+
+          <a href="https://facebook.com">
+              <img src="icon facebook.png" alt="not found">
+          </a>
+
+          <a href="https://instagram.com">
+              <img src="icon instagram.png" alt="not found">
+          </a>
+
+          <a href="https://twitter.com">
+              <img src="icon twitter.png" alt="not found">
+          </a>
+
+      </div>
+
+
+      <div class="footer-4">
+          <h3>Contact Us</h3>
+
+          <p>lilithbloom@gmail.com</p>
+      </div>
+    <hr>
+  </div>
+  <div class="footer-bawah">
+      <div class="footer-bawah-kiri"> 
+          © 2023 Lilith Bloom All Rights Reserved
+      </div>
+
+      <div class="footer-bawah-kanan"> 
+          <ul>
+              <li>
+                  <a href="#">About Us</a>
+              </li>
+  
+              <li>
+                  <a href="#">Term and Conditions</a> 
+              </li>
+  
+              <li>
+                  <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                  <a href="#">Contact Us</a>
+              </li>
+
+              <li>
+                <a href="dashboard.html" style="color:  #fff0f0;">Secret</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+</footer>
+<!-- section Footer ends -->
+
+</body>
+</html>
